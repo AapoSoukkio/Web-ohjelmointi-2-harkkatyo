@@ -1,235 +1,321 @@
 {
-  "asiakas": [
+  "varasto": [
     {
-      "nimi": "Bridget",
-      "osoite": "71703 Eldridge Avenue",
-      "postinumero": "56559",
-      "postitoimipaikka": "Jacklynberg",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
       "puhelinnro": "(963) 216-5562 x5978",
       "id": "1"
     },
     {
-      "nimi": "Keagan",
-      "osoite": "0392 Bode Plains",
-      "postinumero": "41944-2198",
-      "postitoimipaikka": "Lake Kamren",
-      "puhelinnro": "765-701-4643 x2339",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "2"
     },
     {
-      "nimi": "Clementine",
-      "osoite": "458 Predovic Ferry",
-      "postinumero": "33826",
-      "postitoimipaikka": "Appleton",
-      "puhelinnro": "(214) 615-2602 x50699",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "3"
     },
     {
-      "nimi": "William",
-      "osoite": "9989 Rau Causeway",
-      "postinumero": "90746",
-      "postitoimipaikka": "Janessashire",
-      "puhelinnro": "865.206.3197 x3077",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "4"
     },
     {
-      "nimi": "Pearl",
-      "osoite": "42734 Queen Well",
-      "postinumero": "44238",
-      "postitoimipaikka": "New Mekhifurt",
-      "puhelinnro": "1-254-466-5300",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "6"
     },
     {
-      "nimi": "Gustave",
-      "osoite": "8174 Adams Forks",
-      "postinumero": "51550-0243",
-      "postitoimipaikka": "Port Danial",
-      "puhelinnro": "(773) 858-6627",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "8"
     },
     {
-      "nimi": "Jamar",
-      "osoite": "859 Kovacek Radial",
-      "postinumero": "78566",
-      "postitoimipaikka": "Herzogchester",
-      "puhelinnro": "1-308-543-9289",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "9"
     },
     {
-      "nimi": "Susana",
-      "osoite": "09246 Heathcote Wall",
-      "postinumero": "75544-6279",
-      "postitoimipaikka": "New Deja",
-      "puhelinnro": "638.394.1658 x59675",
+      "tavara": "Kannettava tietokone ",
+      "hylly": "hylly 1",
+      "saldo": "8",
+      "lisatiedot": "ASUS VivoBook",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "10"
     },
     {
-      "nimi": "Ariel",
-      "osoite": "28432 Bailee Estates",
-      "postinumero": "36061-0961",
-      "postitoimipaikka": "Ullrichstad",
-      "puhelinnro": "982-726-2197 x756",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "12"
     },
     {
-      "nimi": "Claudia",
-      "osoite": "851 Renner Neck",
-      "postinumero": "99456",
-      "postitoimipaikka": "Port Linnieton",
-      "puhelinnro": "(857) 904-6852 x47723",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "13"
     },
     {
-      "nimi": "Bill",
-      "osoite": "1817 Ortiz Isle",
-      "postinumero": "04632-7322",
-      "postitoimipaikka": "Nikkoville",
-      "puhelinnro": "(432) 789-5379 x0263",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "14"
     },
     {
-      "nimi": "Jarvis",
-      "osoite": "14386 Collier Plaza",
-      "postinumero": "22428-0833",
-      "postitoimipaikka": "North Thora",
-      "puhelinnro": "(351) 782-9058",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "15"
     },
     {
-      "nimi": "Ola",
-      "osoite": "4047 Ethyl Path",
-      "postinumero": "52815-4693",
-      "postitoimipaikka": "Port Ettieport",
-      "puhelinnro": "1-961-647-8580",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "16"
     },
     {
-      "nimi": "Neva",
-      "osoite": "94780 Steuber Prairie",
-      "postinumero": "45187",
-      "postitoimipaikka": "Port Zacherymouth",
-      "puhelinnro": "389-893-8247",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "17"
     },
     {
-      "nimi": "Vickie",
-      "osoite": "1672 Jeffery Canyon",
-      "postinumero": "54410-5630",
-      "postitoimipaikka": "Ziemetown",
-      "puhelinnro": "871-841-9109 x01288",
+      "tavara": "Taulutelevisio ",
+      "hylly": "hylly 2",
+      "saldo": "7",
+      "lisatiedot": "Samsung 4K ulta HD",
+      "puhelinnro": "(963) 216-5562 x5978",
       "id": "18"
     },
     {
-      "nimi": "Mallie",
-      "osoite": "933 Pamela River",
-      "postinumero": "52312-7542",
-      "postitoimipaikka": "Haleyfort",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
       "puhelinnro": "761-830-4105",
       "id": "19"
     },
     {
-      "nimi": "Kendra",
-      "osoite": "91928 Sage Burg",
-      "postinumero": "04350-4634",
-      "postitoimipaikka": "New Gonzalo",
-      "puhelinnro": "518-366-0726",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "20"
     },
     {
-      "nimi": "Keith",
-      "osoite": "633 White Ford",
-      "postinumero": "21205-2352",
-      "postitoimipaikka": "North Camylle",
-      "puhelinnro": "326.479.3048 x2828",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "21"
     },
     {
-      "nimi": "Edmund",
-      "osoite": "08955 Trantow Lodge",
-      "postinumero": "89923",
-      "postitoimipaikka": "Douglasside",
-      "puhelinnro": "(391) 782-3789 x5405",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "22"
     },
     {
-      "nimi": "Adalberto",
-      "osoite": "4697 Westley Shore",
-      "postinumero": "30215-9998",
-      "postitoimipaikka": "El Cajon",
-      "puhelinnro": "943.847.8586",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "23"
     },
     {
-      "nimi": "Carole",
-      "osoite": "1306 Toy Run",
-      "postinumero": "12597-5335",
-      "postitoimipaikka": "Desireeton",
-      "puhelinnro": "1-488-876-6003 x02568",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "24"
     },
     {
-      "nimi": "Annie",
-      "osoite": "575 Keeling Divide",
-      "postinumero": "52835",
-      "postitoimipaikka": "Placentia",
-      "puhelinnro": "552-803-6589 x87291",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "25"
     },
     {
-      "nimi": "Johann",
-      "osoite": "98875 Bartell Lodge",
-      "postinumero": "61969-4034",
-      "postitoimipaikka": "Port Mallie",
-      "puhelinnro": "630.415.8059 x15868",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "26"
     },
     {
-      "nimi": "Veda",
-      "osoite": "5045 Brannon Ville",
-      "postinumero": "13038",
-      "postitoimipaikka": "San Tan Valley",
-      "puhelinnro": "808.698.8128",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "27"
     },
     {
-      "nimi": "Kenyon",
-      "osoite": "179 Augustus Key",
-      "postinumero": "08999",
-      "postitoimipaikka": "New Selena",
-      "puhelinnro": "588-292-4803 x69175",
+      "tavara": "Pölynimuri",
+      "hylly": "Hylly 3",
+      "saldo": "10",
+      "lisatiedot": "Pure D8 Bagged Cleaner 57 dB",
+      "puhelinnro": "761-830-4105",
       "id": "28"
     },
     {
-      "nimi": "Ellsworth",
-      "osoite": "068 Margarete Trace",
-      "postinumero": "73501",
-      "postitoimipaikka": "Germainefurt",
-      "puhelinnro": "898.399.9515",
+      "tavara": "Kypärä",
+      "hylly": "Hylly 4",
+      "saldo": "5",
+      "lisatiedot": "SHOEI X-SPIRIT 3 AERODYNE TC-3",
+      "puhelinnro": "761-830-4105",
       "id": "29"
     },
     {
-      "nimi": "Fredy",
-      "osoite": "142 Schmidt Junction",
-      "postinumero": "53414-8040",
-      "postitoimipaikka": "Moreno Valley",
+      "tavara": "Kypärä",
+      "hylly": "Hylly 4",
+      "saldo": "5",
+      "lisatiedot": "SHOEI X-SPIRIT 3 AERODYNE TC-3",
       "puhelinnro": "(297) 309-8035",
       "id": "30"
     },
     {
-      "nimi": "tst",
-      "osoite": "testi",
-      "id": "JoFWbtT"
+      "tavara": "Kypärä",
+      "hylly": "Hylly 4",
+      "saldo": "5",
+      "lisatiedot": "SHOEI X-SPIRIT 3 AERODYNE TC-3",
+      "id": "31"
     },
     {
-      "nimi": "tst",
-      "osoite": "testi",
-      "id": "T3BwEv9"
+      "tavara": "tst",
+      "hylly": "testi",
+      "id": "r7T-CU7"
     },
     {
-      "nimi": "tst",
-      "osoite": "testi",
-      "id": "S5tZ7Ty"
+      "tavara": "tst",
+      "hylly": "testi",
+      "id": "pfpvn6b"
+    }
+  ],
+  "hylly2": [
+    {
+      "tavara": "Bridget",
+      "hylly": "71703 Eldridge Avenue",
+      "saldo": "56559",
+      "lisatiedot": "Jacklynberg",
+      "puhelinnro": "(963) 216-5562 x5978",
+      "id": "1"
+    },
+    {
+      "tavara": "Keagan",
+      "hylly": "0392 Bode Plains",
+      "saldo": "41944-2198",
+      "lisatiedot": "Lake Kamren",
+      "puhelinnro": "765-701-4643 x2339",
+      "id": "2"
+    },
+    {
+      "tavara": "Clementine",
+      "hylly": "458 Predovic Ferry",
+      "saldo": "33826",
+      "lisatiedot": "Appleton",
+      "puhelinnro": "(214) 615-2602 x50699",
+      "id": "3"
+    },
+    {
+      "tavara": "William",
+      "hylly": "9989 Rau Causeway",
+      "saldo": "90746",
+      "lisatiedot": "Janessashire",
+      "puhelinnro": "865.206.3197 x3077",
+      "id": "4"
+    },
+    {
+      "tavara": "Pearl",
+      "hylly": "42734 Queen Well",
+      "saldo": "44238",
+      "lisatiedot": "New Mekhifurt",
+      "puhelinnro": "1-254-466-5300",
+      "id": "6"
+    }
+  ],
+  "hylly3": [
+    {
+      "tavara": "Bridget",
+      "hylly": "71703 Eldridge Avenue",
+      "saldo": "56559",
+      "lisatiedot": "Jacklynberg",
+      "puhelinnro": "(963) 216-5562 x5978",
+      "id": "1"
+    },
+    {
+      "tavara": "Keagan",
+      "hylly": "0392 Bode Plains",
+      "saldo": "41944-2198",
+      "lisatiedot": "Lake Kamren",
+      "puhelinnro": "765-701-4643 x2339",
+      "id": "2"
+    },
+    {
+      "tavara": "Clementine",
+      "hylly": "458 Predovic Ferry",
+      "saldo": "33826",
+      "lisatiedot": "Appleton",
+      "puhelinnro": "(214) 615-2602 x50699",
+      "id": "3"
+    },
+    {
+      "tavara": "William",
+      "hylly": "9989 Rau Causeway",
+      "saldo": "90746",
+      "lisatiedot": "Janessashire",
+      "puhelinnro": "865.206.3197 x3077",
+      "id": "4"
+    },
+    {
+      "tavara": "Pearl",
+      "hylly": "42734 Queen Well",
+      "saldo": "44238",
+      "lisatiedot": "New Mekhifurt",
+      "puhelinnro": "1-254-466-5300",
+      "id": "6"
     }
   ]
 }
