@@ -135,6 +135,11 @@
       "saldo": 10,
       "lisatiedot": "sininen maljakko",
       "id": "lSHf2jm"
+    },
+    {
+      "tavara": "tst",
+      "hylly": "testi",
+      "id": "Dzo-lsQ"
     }
   ]
 }

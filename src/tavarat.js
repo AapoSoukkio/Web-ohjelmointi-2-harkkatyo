@@ -236,6 +236,7 @@ export class Tavarat extends Component {
             <br></br>
             <br></br>
             <button
+              data-testid="haeNappi"
               className={styles.bouncy}
               onClick={() => Search(this.state)}
             >
