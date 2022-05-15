@@ -1,15 +1,9 @@
 {
   "varasto": [
     {
-      "tavara": "Kannettava tietokone",
-      "hylly": "1",
-      "saldo": 7,
-      "lisatiedot": "MacBook Air",
-      "id": "1"
-    },
-    {
       "tavara": "Ruokapyötä",
       "hylly": "2",
+      "hyllyMax": 5,
       "saldo": 5,
       "lisatiedot": "Rowico Yumi ruokapöytä 190x90 cm",
       "id": "2"
@@ -17,13 +11,15 @@
     {
       "tavara": "Kannettava tietokone",
       "hylly": "3",
-      "saldo": 5,
+      "hyllyMax": 10,
+      "saldo": 4,
       "lisatiedot": "ASUS VivoBook",
       "id": "3"
     },
     {
       "tavara": "Tietokonetuoli",
       "hylly": "4",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "ACTIVE GAMING MASTER -pelituoli",
       "id": "4"
@@ -31,6 +27,7 @@
     {
       "tavara": "Näyttö",
       "hylly": "5",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "HP ELITEDISPLAY E240 24 ",
       "id": "5"
@@ -38,6 +35,7 @@
     {
       "tavara": "Matto",
       "hylly": "6",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "NIZZA-matto 80 x 200 cm",
       "id": "6"
@@ -45,6 +43,7 @@
     {
       "tavara": "Verhot",
       "hylly": "7",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "Pimennysverhot, 2 kpl, harmaa 145x250 cm",
       "id": "7"
@@ -52,6 +51,7 @@
     {
       "tavara": "Kypärä",
       "hylly": "8",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "ICON KYPÄRÄ AIRFLITE MIPS DEMO, MUSTA",
       "id": "8"
@@ -59,6 +59,7 @@
     {
       "tavara": "Pölynimuri",
       "hylly": "9",
+      "hyllyMax": 8,
       "saldo": 5,
       "lisatiedot": "Bosch HomeProfessional pölynimuri BSGL5PRO8",
       "id": "9"
@@ -66,6 +67,7 @@
     {
       "tavara": "Grilli",
       "hylly": "10",
+      "hyllyMax": 5,
       "saldo": 5,
       "lisatiedot": "Weber Genesis II E310 kaasugrilli",
       "id": "10"
@@ -73,6 +75,7 @@
     {
       "tavara": "Pesukone",
       "hylly": "11",
+      "hyllyMax": 3,
       "saldo": 5,
       "lisatiedot": "UPO P612ES PYYKINPESUKONE",
       "id": "11"
@@ -80,6 +83,7 @@
     {
       "tavara": "Jääkaappi",
       "hylly": "12",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "GORENJE NRKE62XL JÄÄKAAPPIPAKASTIN",
       "id": "12"
@@ -87,6 +91,7 @@
     {
       "tavara": "TV-taso",
       "hylly": "13",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "TV-taso Naive - Tammiväri",
       "id": "13"
@@ -94,6 +99,7 @@
     {
       "tavara": "Kaappikello",
       "hylly": "14",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "Rhythm puinen kaappikello CMJ581-NR06",
       "id": "14"
@@ -101,6 +107,7 @@
     {
       "tavara": "Sähköpotkulauta",
       "hylly": "15",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "Xiaomi Mi Electric Scooter 3 -sähköpotkulauta, musta",
       "id": "15"
@@ -108,6 +115,7 @@
     {
       "tavara": "Jakkara",
       "hylly": "16",
+      "hyllyMax": 12,
       "saldo": 5,
       "lisatiedot": "Puinen jakkara",
       "id": "B1jjp3k"
@@ -115,9 +123,18 @@
     {
       "tavara": "Lamppu",
       "hylly": "17",
+      "hyllyMax": 12,
       "saldo": 4,
       "lisatiedot": "Riippuvalaisin ALBA 1xE27/60W/230V",
       "id": "lJFDJNy"
+    },
+    {
+      "tavara": "Maljakko",
+      "hylly": "18",
+      "hyllyMax": 10,
+      "saldo": 10,
+      "lisatiedot": "sininen maljakko",
+      "id": "lSHf2jm"
     }
   ]
 }

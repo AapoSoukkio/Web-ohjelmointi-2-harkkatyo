@@ -6,6 +6,16 @@ import styles from "./mystyle.module.css";
 // HUOM JSON SERVUN PORTTINA 3004
 // json-servun käynnistys vscoden terminaalista(ctrl+shift+ö): json-server --watch --port 3004 src/db.json --delay 1000
 
+function HyllyTaynna(saldo, hyllyMax) {
+  console.log("######### saldo",saldo);
+  console.log("######### hyllyMax",hyllyMax);
+  return saldo >= hyllyMax; 
+}
+
+function HyllyTyhja(saldo){
+  return saldo <= 0;
+}
+
 export class Tavarat extends Component {
   constructor(props) {
     super();
@@ -81,19 +91,25 @@ export class Tavarat extends Component {
     });
   }
 
-
-
     //saldon lisäys
     async saldoLisaa(event) {
       console.log(event.target.id);
       let response = await fetch("http://localhost:3004/varasto/" + event.target.id);
       let data = await response.json();
+
+      const hyllyTaynna = HyllyTaynna(data.saldo, data.hyllyMax);
+      console.log("#########hylly täynnä", hyllyTaynna);
+      if(hyllyTaynna){
+        alert("Hylly täynnä!")
+        return;
+      }
+
       await fetch("http://localhost:3004/varasto/" + event.target.id, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({tavara: data.tavara, hylly: data.hylly,
+        body: JSON.stringify({tavara: data.tavara, hylly: data.hylly, hyllyMax: data.hyllyMax,
          saldo: data.saldo +1 , lisatiedot: data.lisatiedot, id: event.target.id})
       }).then((response) => {
         console.log(response);
@@ -106,12 +122,18 @@ export class Tavarat extends Component {
         console.log(event.target.id);
         let response = await fetch("http://localhost:3004/varasto/" + event.target.id);
         let data = await response.json();
+
+        const hyllyTyhja = HyllyTyhja(data.saldo)
+        if(hyllyTyhja){
+          return;
+        }
+
         await fetch("http://localhost:3004/varasto/" + event.target.id, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({tavara: data.tavara, hylly: data.hylly,
+          body: JSON.stringify({tavara: data.tavara, hylly: data.hylly, hyllyMax: data.hyllyMax,
            saldo: data.saldo -1 , lisatiedot: data.lisatiedot, id: event.target.id})
         }).then((response) => {
           console.log(response);

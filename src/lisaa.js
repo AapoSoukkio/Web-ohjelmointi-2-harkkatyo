@@ -33,7 +33,7 @@ import { Button, Alert } from "react-bootstrap";
         fetch("http://localhost:3004/varasto",{
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({tavara: tavara, hylly: hylly, saldo: 1,
+            body: JSON.stringify({tavara: tavara, hylly: hylly, hyllyMax: 10, saldo: 1,
                 lisatiedot: lisatiedot}),
              }).then(() => {
               console.log("uusi tavara lisätty");
@@ -89,6 +89,8 @@ import { Button, Alert } from "react-bootstrap";
                     <option value={"15"}>Hylly 15</option>
                     <option value={"16"}>Hylly 16</option>
                     <option value={"17"}>Hylly 17</option>
+                    <option value={"18"}>Hylly 18</option>
+                    <option value={"19"}>Hylly 19</option>
                 </select>
                 <p></p>
                 <button className={styles.lisaaUusi}>Tallenna uusi</button>
