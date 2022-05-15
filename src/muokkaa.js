@@ -38,7 +38,7 @@ export function Muokkaa (props) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({tavara: tavara.tavara, hylly: muokattuHyllyPaikka, saldo: tavara.saldo,
+      body: JSON.stringify({tavara: tavara.tavara, hylly: muokattuHyllyPaikka, hyllyMax: tavara.hyllyMax, saldo: tavara.saldo,
       lisatiedot: muokatutLisatiedot, puhelinnro: tavara.puhelinnro, id: state}),
     }).then((response) => {
       console.log(response);
@@ -106,6 +106,25 @@ export function Muokkaa (props) {
                     <option value={"15"}>Hylly 15</option>
                     <option value={"16"}>Hylly 16</option>
                     <option value={"17"}>Hylly 17</option>
+                    <option value={"18"}>Hylly 18</option>
+                    <option value={"19"}>Hylly 19</option>
+                    <option value={"20"}>Hylly 20</option>
+                    <option value={"21"}>Hylly 21</option>
+                    <option value={"22"}>Hylly 22</option>
+                    <option value={"23"}>Hylly 23</option>
+                    <option value={"24"}>Hylly 24</option>
+                    <option value={"25"}>Hylly 25</option>
+                    <option value={"26"}>Hylly 26</option>
+                    <option value={"27"}>Hylly 27</option>
+                    <option value={"28"}>Hylly 28</option>
+                    <option value={"29"}>Hylly 29</option>
+                    <option value={"30"}>Hylly 30</option>
+                    <option value={"31"}>Hylly 31</option>
+                    <option value={"32"}>Hylly 32</option>
+                    <option value={"33"}>Hylly 33</option>
+                    <option value={"34"}>Hylly 34</option>
+                    <option value={"35"}>Hylly 35</option>
+                    <option value={"36"}>Hylly 36</option>
                 </select>
                 <p></p>
           <label>Lisätiedot:</label>

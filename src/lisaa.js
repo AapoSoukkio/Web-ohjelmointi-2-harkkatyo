@@ -4,31 +4,14 @@ import { useState, useEffect } from "react";
 import styles from "./mystyle.module.css";
 import { Button, Alert } from "react-bootstrap";
 
-
-
-    // async function lisaaUusi() {
-    //     await fetch("http://localhost:3004/varasto", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify({ tavara: "tst", hylly: "testi" }),
-    //     }).then((response) => {
-    //       console.log(response);
-    //       this.fetchData();
-    //     });
-    //   }
-
   export const Lisaa = () => {
 
     const [tavara, setuusiTavara] = useState("")
     const [hylly, setuusiHylly] = useState("1")
-    // const [saldo, setuusiSaldo] = useState("8")
     const [lisatiedot, setuusiLisatiedot] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // const tuote = [tavara, hylly, saldo, lisatiedot, puhelinnro]
 
         fetch("http://localhost:3004/varasto",{
             method: 'POST',
@@ -72,7 +55,7 @@ import { Button, Alert } from "react-bootstrap";
                 required
                 value={hylly}
                 onChange={(e) => setuusiHylly(e.target.value)}>
-                    <option value={"1"}>Hylly 1</option>
+                <option value={"1"}>Hylly 1</option>
                     <option value={"2"}>Hylly 2</option>
                     <option value={"3"}>Hylly 3</option>
                     <option value={"4"}>Hylly 4</option>
@@ -91,6 +74,23 @@ import { Button, Alert } from "react-bootstrap";
                     <option value={"17"}>Hylly 17</option>
                     <option value={"18"}>Hylly 18</option>
                     <option value={"19"}>Hylly 19</option>
+                    <option value={"20"}>Hylly 20</option>
+                    <option value={"21"}>Hylly 21</option>
+                    <option value={"22"}>Hylly 22</option>
+                    <option value={"23"}>Hylly 23</option>
+                    <option value={"24"}>Hylly 24</option>
+                    <option value={"25"}>Hylly 25</option>
+                    <option value={"26"}>Hylly 26</option>
+                    <option value={"27"}>Hylly 27</option>
+                    <option value={"28"}>Hylly 28</option>
+                    <option value={"29"}>Hylly 29</option>
+                    <option value={"30"}>Hylly 30</option>
+                    <option value={"31"}>Hylly 31</option>
+                    <option value={"32"}>Hylly 32</option>
+                    <option value={"33"}>Hylly 33</option>
+                    <option value={"34"}>Hylly 34</option>
+                    <option value={"35"}>Hylly 35</option>
+                    <option value={"36"}>Hylly 36</option>
                 </select>
                 <p></p>
                 <button className={styles.lisaaUusi}>Tallenna uusi</button>
@@ -98,7 +98,5 @@ import { Button, Alert } from "react-bootstrap";
             </div>
         
         )
-    
-
         }
 export default Lisaa;

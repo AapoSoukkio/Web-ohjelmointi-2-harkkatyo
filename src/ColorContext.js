@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-const ColorContext = React.createContext("hotpink"); // luodaan context
+const ColorContext = React.createContext("hotpink"); 
 
 export default ColorContext;

@@ -20,7 +20,6 @@ export class Tavarat extends Component {
   constructor(props) {
     super();
 
-    this.lisaaTesti = this.lisaaTesti.bind(this);
     this.delete = this.delete.bind(this);
     this.saldoLisaa = this.saldoLisaa.bind(this);
     this.saldoVahenna = this.saldoVahenna.bind(this);
@@ -43,20 +42,6 @@ export class Tavarat extends Component {
     let data = await response.json();
     console.log(data);
     this.setState({ data: data, isLoaded: true });
-  }
-
-  //testi tavaran lisäys
-  async lisaaTesti() {
-    await fetch("http://localhost:3004/varasto", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ tavara: "tst", hylly: "testi" }),
-    }).then((response) => {
-      console.log(response);
-      this.fetchData();
-    });
   }
 
   //tavaran poisto
@@ -213,11 +198,6 @@ export class Tavarat extends Component {
           <Link to="/lisaa">LISÄÄ UUSI</Link>
           <br></br>
           <br></br>
-          <button className={styles.bouncy} onClick={this.lisaaTesti}>
-            Lisää testi
-          </button>
-          <br></br>
-          <br></br>
           <div>
             <label>Hae tavaraa nimellä </label> <br></br>
             <input
@@ -282,7 +262,6 @@ export function Koti() {
   return (
     <div>
       <h1>Tervetuloa varasto sovellukseen</h1>
-      {/* <Link to="/muokkaa">MUOKKAA</Link> */}
       <p></p>
       <Link to="/tavarat">TAVARAT</Link>
       <p></p>

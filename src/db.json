@@ -12,7 +12,7 @@
       "tavara": "Kannettava tietokone",
       "hylly": "3",
       "hyllyMax": 10,
-      "saldo": 4,
+      "saldo": 5,
       "lisatiedot": "ASUS VivoBook",
       "id": "3"
     },
@@ -20,7 +20,7 @@
       "tavara": "Tietokonetuoli",
       "hylly": "4",
       "hyllyMax": 12,
-      "saldo": 5,
+      "saldo": 8,
       "lisatiedot": "ACTIVE GAMING MASTER -pelituoli",
       "id": "4"
     },
@@ -131,15 +131,74 @@
     {
       "tavara": "Maljakko",
       "hylly": "18",
-      "hyllyMax": 10,
-      "saldo": 10,
-      "lisatiedot": "sininen maljakko",
+      "hyllyMax": 20,
+      "saldo": 20,
+      "lisatiedot": "Puinen maljakko",
       "id": "lSHf2jm"
     },
     {
-      "tavara": "tst",
-      "hylly": "testi",
-      "id": "Dzo-lsQ"
+      "tavara": "Partakone",
+      "hylly": "19",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "Philips Series 1000 parranajokone S133241",
+      "id": "hpxDhYy"
+    },
+    {
+      "tavara": "Hammasharja",
+      "hylly": "20",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "Oral-B Vitality 100 sähköhammasharja",
+      "id": "udonwnr"
+    },
+    {
+      "tavara": "Kuulokkeet",
+      "hylly": "21",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "Sony langattomat around-ear kuulokkeet WH-1000XM4",
+      "id": "RgEcxDY"
+    },
+    {
+      "tavara": "Liesituuletin",
+      "hylly": "22",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "Ecotronic liesituuletin EVL600B3",
+      "id": "wlqcKcz"
+    },
+    {
+      "tavara": "radio",
+      "hylly": "23",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "Pinell Supersound 101 digitaalinen radio",
+      "id": "Re-Aw9s"
+    },
+    {
+      "tavara": "Soitin",
+      "hylly": "24",
+      "hyllyMax": 10,
+      "saldo": 10,
+      "lisatiedot": "Philips AZ700T/12 kannettava CD-soitin",
+      "id": "Re-Aw9t"
+    },
+    {
+      "tavara": "Soitin",
+      "hylly": "25",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "GPO BROOKLYN Ghettoblaster, Hopea",
+      "id": "Re-Aw9u"
+    },
+    {
+      "tavara": "Roskakori",
+      "hylly": "26",
+      "hyllyMax": 10,
+      "saldo": 1,
+      "lisatiedot": "China made trash",
+      "id": "aJ2-xyE"
     }
   ]
 }
