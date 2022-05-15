@@ -1,18 +1,3 @@
-/*.button {
-    cursor: pointer;
-    border: 1px solid #1a202c;
-    padding: 5px;
-    color: #ffffff;
-    min-width: 64px;
-    background-color: rgb(112, 80, 255);
-    transition: all 0.1s ease-in;
-  }
-  .button:hover {
-    background-color: #4CAF50; /* Green 
-    color: white;
-  }
-  */
-
 .bouncy {
   display: inline-block;
   padding: 0.3em 1.2em;
@@ -191,4 +176,41 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.lisaa{
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+}
+
+.lisaaUusi{
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 300;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+}
+
+.muokkaa{
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  padding: 10px;
+  font-family: Arial;
+  font-size: large;
+  margin: 5; /* recommended */
+  white-space:nowrap;
+  display: block;
+}
+
+.muokkaaLabel{
+  text-align: left;
+
 }

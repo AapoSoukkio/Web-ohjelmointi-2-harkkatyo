@@ -12,6 +12,8 @@ export class Tavarat extends Component {
 
     this.lisaaTesti = this.lisaaTesti.bind(this);
     this.delete = this.delete.bind(this);
+    this.saldoLisaa = this.saldoLisaa.bind(this);
+    this.saldoVahenna = this.saldoVahenna.bind(this);
 
     this.state = {
       data: null,
@@ -79,6 +81,44 @@ export class Tavarat extends Component {
     });
   }
 
+
+
+    //saldon lisäys
+    async saldoLisaa(event) {
+      console.log(event.target.id);
+      let response = await fetch("http://localhost:3004/varasto/" + event.target.id);
+      let data = await response.json();
+      await fetch("http://localhost:3004/varasto/" + event.target.id, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({tavara: data.tavara, hylly: data.hylly,
+         saldo: data.saldo +1 , lisatiedot: data.lisatiedot, id: event.target.id})
+      }).then((response) => {
+        console.log(response);
+        this.fetchData();
+      });
+    }
+
+       //saldon vähennys
+       async saldoVahenna(event) {
+        console.log(event.target.id);
+        let response = await fetch("http://localhost:3004/varasto/" + event.target.id);
+        let data = await response.json();
+        await fetch("http://localhost:3004/varasto/" + event.target.id, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({tavara: data.tavara, hylly: data.hylly,
+           saldo: data.saldo -1 , lisatiedot: data.lisatiedot, id: event.target.id})
+        }).then((response) => {
+          console.log(response);
+          this.fetchData();
+        });
+      }
+
   render() {
     //haku funktio
     const Search = async () => {
@@ -118,7 +158,14 @@ export class Tavarat extends Component {
             <td> {i.hylly} </td>
             <td> {i.saldo} </td>
             <td> {i.lisatiedot} </td>
-            <td> {i.puhelinnro} </td>
+            <td> 
+            <button onClick={this.saldoVahenna} id={i.id}>
+              -
+            </button> 
+            <button onClick={this.saldoLisaa} id={i.id}>
+            +
+            </button> 
+            </td>
             <td>
               <button className={styles.bouncy} onClick={this.delete} id={i.id}>
                 Poista
@@ -126,7 +173,7 @@ export class Tavarat extends Component {
             </td>
             <td>
               {" "}
-              <Link to="/muokkaa" state={i.id}>
+              <Link to="/muokkaa" MuokkaaTavaraa={this.state.id} state={i.id}>
                 {" "}
                 {/* muokkaa linkki, viedään propsina tavaran id */}
                 Muokkaa
@@ -141,7 +188,7 @@ export class Tavarat extends Component {
           <Link to="/">KOTI</Link>
           <br />
           <br />
-          <Link to="/muokkaa">MUOKKAA</Link>
+          <Link to="/lisaa">LISÄÄ UUSI</Link>
           <br></br>
           <br></br>
           <button className={styles.bouncy} onClick={this.lisaaTesti}>
@@ -191,8 +238,8 @@ export class Tavarat extends Component {
                     <td>Hylly</td>
                     <td>Saldo</td>
                     <td>Lisätiedot</td>
-                    <td>Puhelinnro</td>
-                    <td>Poistelu</td>
+                    <td>Saldo hallinta</td>
+                    <td>Poista tavara</td>
                     <td>Muokkaa</td>
                   </tr>
                 </thead>
@@ -208,66 +255,15 @@ export class Tavarat extends Component {
   }
 }
 
-export const Lisatiedot = (props) => {
-  console.log("Lisatiedot");
-  const [tavara, setTavara] = useState([]); 
-  const [load, setLoad] = useState(false); 
-
-  const location = useLocation();
-  const state = location.state;
-  console.log("STATE = " + state);
-
-  useEffect(() => {
-    const fetchTavara = async () => {
-      const r = await fetch("http://localhost:3004/varasto/" + state); //haetaan tavara propsina tulleen id:n avulla
-      const data = await r.json();
-      setTavara(data);
-      setLoad(true);
-      console.log("Data useeffetist" + data.tavara);
-    };
-    fetchTavara();
-  }, []); // kun jättää [] tyhjäksi, useEffect ajaa läpi vain kerran
-
-  return (
-    <div>
-      {!load ? (
-        <h1 className={styles.loading}>Loading...</h1>
-      ) : (
-        <div>
-          <h1>Tämä on muokkaa sivu</h1>
-          <h2>ID: {tavara.id}</h2>
-          
-          <h2>Tavara: {tavara.tavara}</h2>
-          {/* <input type="text" 
-          value={this.state.tavara} // to display the value
-          onChange={onChange} // to store the value on the state
-          name={name} />  */}
-          <h2>Hylly: {tavara.hylly}</h2>
-          <h2>Saldo: {tavara.saldo}</h2>
-          <h2>Lisätiedot: {tavara.lisatiedot}</h2>
-          <h2>Puhelinnumero: {tavara.puhelinnro}</h2>
-          <button
-              className={styles.bouncy}
-              // onClick={() => Search(this.state)} //tähän muokkaus
-            >Talenna muutokset
-           </button>   
-          <br />
-          <Link to="/">KOTI</Link>
-          <p></p>
-          <Link to="/tavarat">TAVARAT</Link>
-        </div>
-      )}
-    </div>
-  );
-};
-
 export function Koti() {
   return (
     <div>
       <h1>Tervetuloa varasto sovellukseen</h1>
-      <Link to="/muokkaa">MUOKKAA</Link>
+      {/* <Link to="/muokkaa">MUOKKAA</Link> */}
       <p></p>
       <Link to="/tavarat">TAVARAT</Link>
+      <p></p>
+      <Link to="/lisaa">LISÄÄ UUSI</Link>
     </div>
   );
 }
