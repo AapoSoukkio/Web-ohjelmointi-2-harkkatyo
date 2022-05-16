@@ -1,6 +1,6 @@
 import { render, screen, waitForElementToBeRemoved } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-
+import React from "react";
 import Tavarat from './tavarat';
 
 
@@ -18,4 +18,10 @@ describe("Testit hae napille", () => {
         expect(items).toHaveLength(1);
     
     })
+})
+
+it("Renderöi oikein", () => {
+    const {gueryByTestId} = render(<Tavarat/>)
+    
+    expect(gueryByTestId("haenappi")).toBeTruthy();
 })
